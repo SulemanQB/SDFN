@@ -1,0 +1,49 @@
+{
+  "protocol": {
+    "normalization": "train-only z-score + RevIN",
+    "samples": 20,
+    "note": "cov_90 is empirical coverage of 90% predictive intervals; well-calibrated \u2248 0.90"
+  },
+  "ett_l336_h96": [
+    {
+      "dataset": "ETTh1",
+      "context_len": 336,
+      "pred_len": 96,
+      "n_params": 899936,
+      "mse": 0.8821,
+      "mae": 0.6399,
+      "crps": 0.4484,
+      "cov_90": 0.5094
+    },
+    {
+      "dataset": "ETTh2",
+      "context_len": 336,
+      "pred_len": 96,
+      "n_params": 899936,
+      "mse": 0.5734,
+      "mae": 0.5302,
+      "crps": 0.4527,
+      "cov_90": 0.216
+    },
+    {
+      "dataset": "ETTm1",
+      "context_len": 336,
+      "pred_len": 96,
+      "n_params": 899936,
+      "mse": 0.7502,
+      "mae": 0.5676,
+      "crps": 0.4534,
+      "cov_90": 0.3208
+    },
+    {
+      "dataset": "ETTm2",
+      "context_len": 336,
+      "pred_len": 96,
+      "n_params": 899936,
+      "mse": 0.4066,
+      "mae": 0.4101,
+      "crps": 0.2871,
+      "cov_90": 0.536
+    }
+  ]
+}
